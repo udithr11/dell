@@ -454,7 +454,7 @@
                 position:relative
             }
             .slider_image{
-                width:100%;display:flex;justify-content: flex-end;
+                width:100%;display:flex;justify-content: flex-end;padding-right:1.5rem;
             }
             .slider_image_inner{
                 aspect-ratio: 1.77777778;width:80%;
@@ -489,6 +489,31 @@
             .four_left_link_2_inner_span{
                 font-size:2rem;
             }
+            .mySwiper_1 .swiper-slide {
+                overflow: hidden;
+            }
+            .swiper-pagination-bullet{
+                opacity:1;
+                background:white;
+                transition:width 1s;
+                border-radius: 10px;
+
+            }
+            .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+                margin:7px;
+            }
+            .swiper-pagination-bullet-active{
+                background:#0672cb;
+                width:2.2rem;
+                border-radius: 10px;
+                
+            }
+
+/* Blur effect for next and previous slides */
+.mySwiper_1 .swiper-slide-prev,
+.mySwiper_1 .swiper-slide-next {
+    filter: opacity(0.25);
+}
 
 
 
@@ -724,7 +749,7 @@
       </div> 
     </div>
 
-    <div style="background-colorr:antiquewhite;position:absolute;top:50%;z-index:40;width:80%;margin-left: -4rem;">
+    <div style="background-colorr:antiquewhite;position:absolute;top:50%;z-index:40;width:92%;margin-left: -6rem;">
         <div style="display:flex;justify-content: space-between;">
         <div  id="left_functionality_1" onclick="play_pause_change1()" style="background-color:white;width:fit-content;padding:0.5rem;border-radius:5px">
             <span style="color:#0672cb;display:flex;" class="material-symbols-outlined swiper-button-prev1">
@@ -739,10 +764,10 @@
         </div>
         </div>
 
-        <div style="background-color:rgb(217, 212, 212)">
+        <div style="background-colorr:rgb(222, 95, 95);padding:1rem 0rem;padding-right:1.5rem">
         <div style="width:100%;display:flex;justify-content: flex-end;">
         <div style="display:flex;width:50%">
-        <div class="swiper-pagination1"></div>
+        <div style="opacity:1;color:white"  class="swiper-pagination1"></div>
         <div id="pause_button1" onclick="pause_1()" style="background-color:rgb(0, 0, 0);width:fit-content;padding:0.45rem 0.75rem;display:flex;cursor:pointer;align-items: center;">
             <div style="padding-right:0.75rem;color:white;font-weight:200">Pause</div>
             <span class="material-symbols-outlined" style="color:white">
@@ -769,32 +794,30 @@
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination1",
+    
   },
   navigation: {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
   },
   autoplay: {
-    delay: 500, 
+    delay: 2500, 
     disableOnInteraction: false, // Set to false to continue autoplay even after user interaction
     waitForTransition: true, // Wait for transitions to finish before changing slides
   },
   on: {
     slideChange: function () {
       if (swiper_1.isEnd) {
-        swiper_1.autoplay.stop(); // Stop autoplay when reaching the end
+        var playButton11 = document.getElementById("pause_button1");
+
+        if (playButton11.style.display === "flex") {
+            swiper_1.autoplay.stop();
         setTimeout(function () {
-          swiper_1.slideTo(0); // Go back to the first slide
-
+          swiper_1.slideTo(0); 
+          swiper_1.autoplay.start();
           
-
-        //   var pauseButton11 = document.getElementById("play_button1");
-
-        //   if (pauseButton11.style.display === "flex") {
-          swiper_1.autoplay.start(); 
-        
-        // }
-        }, 2500); // Wait for 2500ms before restarting autoplay
+        }, 2500); 
+        }
       }
     },
   },
@@ -802,11 +825,16 @@
 
 
 document.querySelector('.swiper-button-next1').addEventListener('click', function() {
-  if (swiper_1.isEnd) {
-    swiper_1.slideTo(0); // Go back to the first slide
-    // swiper_1.autoplay.start();
+  
+  if (swiper_1.isEnd) { 
+    var playButton11 = document.getElementById("play_button1");
+    if (playButton11.style.display === "flex") {
+        swiper_1.slideTo(0); 
+    }
   } 
 });
+
+
 
 
 function play_1() {
@@ -846,6 +874,7 @@ function play_pause_change1() {
 }
          
   </script>
+
     </section>
 
     <section id="five" style="height:30vh"></section>

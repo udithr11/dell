@@ -764,9 +764,9 @@
         </div>
         </div>
 
-        <div style="background-colorr:rgb(222, 95, 95);padding:1rem 0rem;padding-right:1.5rem">
+        <div style="background-colorr:rgb(222, 95, 95);padding:2rem 0rem;padding-right:1.5rem">
         <div style="width:100%;display:flex;justify-content: flex-end;">
-        <div style="display:flex;width:50%">
+        <div style="display:flex;width:60%">
         <div style="opacity:1;color:white"  class="swiper-pagination1"></div>
         <div id="pause_button1" onclick="pause_1()" style="background-color:rgb(0, 0, 0);width:fit-content;padding:0.45rem 0.75rem;display:flex;cursor:pointer;align-items: center;">
             <div style="padding-right:0.75rem;color:white;font-weight:200">Pause</div>
@@ -796,6 +796,7 @@
     el: ".swiper-pagination1",
     
   },
+  
   navigation: {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
@@ -808,14 +809,15 @@
   on: {
     slideChange: function () {
       if (swiper_1.isEnd) {
+
         var playButton11 = document.getElementById("pause_button1");
 
         if (playButton11.style.display === "flex") {
+            console.log("swiper function")
             swiper_1.autoplay.stop();
         setTimeout(function () {
           swiper_1.slideTo(0); 
           swiper_1.autoplay.start();
-          
         }, 2500); 
         }
       }
@@ -823,19 +825,17 @@
   },
 });
 
-
 document.querySelector('.swiper-button-next1').addEventListener('click', function() {
   
   if (swiper_1.isEnd) { 
-    var playButton11 = document.getElementById("play_button1");
-    if (playButton11.style.display === "flex") {
-        swiper_1.slideTo(0); 
+    var playButton1111 = document.getElementById("play_button1");
+    if (playButton1111.style.display === "flex") {
+        event.preventDefault();
+        swiper_1.slideTo(0);
+        console.log("querySeletor")
     }
   } 
 });
-
-
-
 
 function play_1() {
     var playButton1 = document.getElementById("play_button1");
@@ -877,7 +877,55 @@ function play_pause_change1() {
 
     </section>
 
-    <section id="five" style="height:30vh"></section>
+    <section id="five">
+        <div class="container-fluid" style="padding:0;position:relative;background: rgba(0, 0, 0, .7);">
+            <div style="max-width:100%;">
+                <video autoplay muted style="width: 100%;">
+                    <source src="media/5752734-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="five_middle_filter" style="width:100%;height:100%;position:absolute;background: rgba(0, 0, 0, .7);top:0;left:0"></div>
+            <div id="five_middle_container" style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-colorr: beige;width:55%">
+                <div style="margin:auto;width:fit-content;text-align: center;color:white">
+                    <div style="font-size:16px;padding-bottom:0.5rem;font-weight:150">DELL TECHNOLOGIES + MERMAIDS</div>
+                    <div style="font-size:40px;font-weight:100;padding-bottom:0.5rem">Creating More Equal Ocean Access</div>
+                    <div style="padding-bottom:2rem;font-weight:200">Technology gives freediver and ocean advocate, Zandile Ndhlovu, freedom to grow
+                         The Black Mermaid Foundation and continue to make spaces where everyone belongs.
+                    </div>
+                    <div id="five_pause_button" onclick="_fiveplay_pause()" style="background-color:#0672cb;width:fit-content;padding:0.45rem 0.75rem;display:flex;cursor:pointer;align-items: center;margin:auto;margin-bottom:1rem">
+                        <span style="color:white" class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <div style="padding-left:0.75rem;font-weight:200;color:white">Play Video</div>
+                        
+                    </div>
+                    <a href="#" style="display:flex;padding-bottom:0.5rem;text-decoration: none;color:white;margin:auto;color:#ffffff;display:flex;justify-content: center;">
+                        <div style="display:flex;align-items:flex-end;font-size:15px;font-weight:200;">
+                            View More Stories <span style="font-size:2rem" class="material-symbols-outlined">
+                                arrow_right_alt
+                                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="five_last_play" style="position:absolute;bottom:0;left:0;width:85%;background-colorr:#d2d2d2;display:flex;justify-content:flex-end;">
+            
+                <div id="five_play_button_last" onclick="_fiveplay_pause()" style="background-color:#0672cb;width:fit-content;padding:0.45rem 0.75rem;display:flex;cursor:pointer;align-items: center;margin-bottom:1rem">
+                    <span style="color:white" class="material-symbols-outlined">
+                        play_circle
+                    </span>
+                    <div style="padding-left:0.75rem;font-weight:200;color:white">Play Video</div>
+                    
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="six" style="background-color:rgb(225, 195, 195);height:10vh"></section>
+    
     
 </body>
 </html>

@@ -20,12 +20,13 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
-<link rel="stylesheet" href="index.css">
 
-<link rel="stylesheet" href="media.css">
 
 
     <title>DELL IN</title>
+    <link rel="stylesheet" href="index.css">
+
+<link rel="stylesheet" href="media.css">
 </head>
 <body>
 
@@ -33,7 +34,8 @@
 
 
     <section id="first">
-
+<style>            .res_on{display:none }
+</style>
        
         
 
@@ -198,6 +200,7 @@
               </div>
               
             </div>
+            <!-- <div id="functionalities_main_container" class="res_off">
             <div id="swiper_functionalities" >
                 <div id="swiper_functionalities_inner">
                     <div class="res_off">
@@ -206,18 +209,18 @@
                             </span>
                     </div>
         
-                    <div id="first_arrow_container" >
-                        <span id="first_arrow_one" class="material-symbols-outlined swiper-button-prevvv">
+                    <div class="first_arrow_container res_off" >
+                        <span  class="material-symbols-outlined swiper-button-prevvv first_arrow_one">
                             arrow_left_alt
                         </span>
-                        <div id="first_arrow_two" class="swiper-paginationqq">
+                        <div  class="res_off swiper-paginationqq first_arrow_two">
                         </div>
-                        <span id="first_arrow_three" class="material-symbols-outlined swiper-button-nexttt">
+                        <span  class="material-symbols-outlined swiper-button-nexttt first_arrow_three">
                             arrow_right_alt
                         </span>
                     </div>
                     <div class="res_on" >
-                        <span id="first_down_arrow_res" class="material-symbols-outlined">
+                        <span  class="material-symbols-outlined first_down_arrow_res">
                             keyboard_arrow_down
                         </span>
                     </div>
@@ -239,6 +242,48 @@
                     
                 </div>
             </div>
+            </div> -->
+
+            <div id="functionalities_main_container">
+        <div id="functionalities_res" >
+            <div id="functionalities_res_new" style="">
+                    <div class="first_arrow_container"  style="display:flex">
+                        <span  class="material-symbols-outlined swiper-button-prevvv first_arrow_one">
+                            arrow_left_alt
+                        </span>
+                        <div  class="swiper-paginationqqq first_arrow_two">
+                        </div>
+                        <span  class="material-symbols-outlined swiper-button-nexttt first_arrow_three">
+                            arrow_right_alt
+                        </span>
+
+
+                       
+                    </div>
+                    <div class="res_off" id="play_button" onclick="play_pause()" >
+                        <div class="play_pause" >Pause</div>
+                        <span class="material-symbols-outlined play_pause_inner" >
+                            pause
+                        </span>
+                    </div>
+        
+                    <div class="res_off" id="pause_button" onclick="play_pause()" >
+                        <div class="play_pause">Play</div>
+                        <span  class="material-symbols-outlined play_pause_inner">
+                            play_circle
+                        </span>
+                    </div>
+                </div>
+                    <div id="functionalities_arrow_res" style="">
+                        <span  class="material-symbols-outlined first_down_arrow_res">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                    
+                
+            
+        </div>
+    </div>
             
             
           </div>
@@ -255,7 +300,8 @@
                 effect: "fade",
                
               pagination: {
-                el: ".swiper-paginationqq",
+                el: ".swiper-paginationqq,.swiper-paginationqqq",
+
                 type: "fraction",
               },
               navigation: {
@@ -289,6 +335,240 @@
           </script>
     
     </section>
+
+
+    <section id="second" >
+
+        <style>
+            #second{
+                background-color:#0a0e14;margin-top:-1rem;padding-top:1rem;padding-bottom:2rem;
+            }
+            
+            .second_col_1{
+                background: linear-gradient(147deg, #839db4, #d2d2d2 100%);position:relative;
+            }
+            .second_col_2{
+                object-fit:contain;
+            }
+            .second_col_3{
+                position:absolute;top:0;left:0;width:fit-content;background-color: #0a0e14;padding:0.5rem;color:white;font-weight:250;
+            }
+            .second_new_col{
+                padding:0;padding-top:1rem;
+            }
+            #second_main_new{
+                width:80%;margin:auto;
+            }
+            .second_main_new_inner{
+                padding:0;margin-top:0.5rem
+            }
+            .second__main_new_row{
+                padding:0;margin:0;
+            }
+            .second_special_two{
+                padding-left:1rem
+            }
+            .second_special_three{
+                padding-left:1rem;padding-right:1rem;
+            }
+            .second_res_main{padding:1rem}
+            .second_res_row{padding:0;margin:0}
+            .second_res_row_inner{padding:0;padding-right:0.5rem;}
+            .second_res_row_inner_even{padding:0;padding-left:0.5rem;}
+
+            .second_res_container{display:flex;padding-top:1rem}
+            .second_res_img{width:35%;min-height:4rem;background: linear-gradient(147deg, #839db4, #d2d2d2 100%);}
+            .second_res_text{width:65%;padding:0;padding-left:1rem;background-color: #1d2c3b;color:white;display:flex;align-items: center;}
+
+        </style>
+    
+        <div id="second_main_new">
+            <div  class="container-fluid second_main_new_inner res_off">
+                <div  class="row second__main_new_row">
+    
+                    <!-- 1111 -->
+                    <div class="col second_new_col "> 
+                        <div class="second_col_1">
+                            <div>
+                                <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-laptops-xs9320.png?fmt=png-alpha&wid=480&hei=360">
+                            </div>
+                            <div class="second_col_3">
+                                Laptops
+                            </div>
+                            </div>
+                    </div>
+    
+                     <!-- 2222 -->
+                     <div  class="col second_new_col second_special_two" > 
+                        <div class="second_col_1">
+                            <div>
+                                <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-warm-consumer-inspiron-desktops-in7720.png?fmt=png-alpha&wid=480&hei=360">
+                            </div>
+                            <div class="second_col_3">
+                                Desktops & All-in-Ones
+                            </div>
+                            </div>
+                    </div>
+                     <!-- 3333 -->
+                     <div  class="col second_new_col second_special_three" > 
+                        <div class="second_col_1">
+                            <div>
+                                <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/uhp-wayfinder-monitor-s2722qc-480x360.png?fmt=png-alpha&wid=480&hei=360">
+                            </div>
+                            <div class="second_col_3">
+                                Monitors
+                            </div>
+                            </div>
+                    </div>
+    
+                    <!-- 4444 -->
+                    <div  class="col second_new_col"> 
+                        <div class="second_col_1">
+                            <div>
+                                <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-pc-accessories-wb7022.png?fmt=png-alpha&wid=480&hei=360">
+                            </div>
+                            <div class="second_col_3">
+                                PC Accessories
+                            </div>
+                            </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div  class="container-fluid second_main_new_inner res_off">
+                <div  class="row second__main_new_row">
+    
+                   <!-- 5555 -->
+                <div  class="col second_new_col"> 
+                    <div class="second_col_1">
+                        <div>
+                            <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-apex-multicloud-aas-xs9315-stocksy2607481.jpg?fmt=png-alpha&wid=480&hei=360">
+                        </div>
+                        <div class="second_col_3">
+                            APEX Multicloud & aaS
+                        </div>
+                        </div>
+                </div>
+                <!-- 666 -->
+                <div  class="col second_new_col second_special_two"> 
+                    <div class="second_col_1">
+                        <div>
+                            <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/uhp-wayfinder-enterprise-server-r760xa-480x360.png?fmt=png-alpha&wid=480&hei=360">
+                        </div>
+                        <div class="second_col_3">
+                            IT Infrastructure
+                        </div>
+                        </div>
+                </div>
+
+                <!-- 77 -->
+                <div  class="col second_new_col second_special_three"> 
+                    <div class="second_col_1">
+                        <div>
+                            <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-gen-ai-solutions-getty1537473222.jpg?fmt=png-alpha&wid=480&hei=360">
+                        </div>
+                        <div class="second_col_3">
+                            AI Solutions
+                        </div>
+                        </div>
+                </div>
+                <!-- 888 -->
+                <div  class="col second_new_col"> 
+                    <div class="second_col_1">
+                        <div>
+                            <img class="img-fluid second_col_2" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/uhp-wayfinder-lifestyle-edge-480x360.jpg?fmt=png-alpha&wid=480&hei=360">
+                        </div>
+                        <div class="second_col_3">
+                            Edge Solutions
+                        </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            
+        </div>   
+        <div class="container-fluid second_res_main res_on" >
+            <div  class="row second_res_row">
+                    <!-- 1111 -->
+                <div class="col-md-6 second_res_row_inner"  >
+                    <div class="second_res_container" >
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-laptops-xs9320.png?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text"> Laptops</div>
+                    </div>
+                </div>
+                                <!-- 22222 -->
+    
+                <div class="col-md-6 second_res_row_inner_even" >
+                        <div class="second_res_container">
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-warm-consumer-inspiron-desktops-in7720.png?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text">
+                             Desktops & All-in-Ones
+                            </div>
+                        </div>
+                </div>
+    
+                  <!-- 333 -->
+                  <div class="col-md-6 second_res_row_inner"  >
+                    <div class="second_res_container" >
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/uhp-wayfinder-monitor-s2722qc-480x360.png?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text"> Monitors</div>
+                    </div>
+                </div>
+                <!-- 4444 -->
+    
+                <div class="col-md-6 second_res_row_inner_even" >
+                        <div class="second_res_container">
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-pc-accessories-wb7022.png?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text">
+                            PC Accessories
+                            </div>
+                        </div>
+                </div>
+    
+                 <!-- 555 -->
+                 <div class="col-md-6 second_res_row_inner"  >
+                    <div class="second_res_container" >
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-apex-multicloud-aas-xs9315-stocksy2607481.jpg?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text"> APEX Multicloud & aaS</div>
+                    </div>
+                </div>
+                                <!-- 666 -->
+    
+                <div class="col-md-6 second_res_row_inner_even" >
+                        <div class="second_res_container">
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/uhp-wayfinder-enterprise-server-r760xa-480x360.png?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text">
+                            IT Infrastructure
+                            </div>
+                        </div>
+                </div>
+    
+                  <!-- 7777 -->
+                  <div class="col-md-6 second_res_row_inner"  >
+                    <div class="second_res_container" >
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/dell-homepage-product-wayfinding-cold-gen-ai-solutions-getty1537473222.jpg?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text">  AI Solutions</div>
+                    </div>
+                </div>
+                                <!-- 8888 -->
+    
+                <div class="col-md-6 second_res_row_inner_even" >
+                        <div class="second_res_container">
+                        <img  class="img-fluid second_res_img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/product-wayfinder/uhp-wayfinder-lifestyle-edge-480x360.jpg?fmt=png-alpha&wid=480&hei=360">
+                        <div class="second_res_text">
+                             Edge Solutions
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div> 
+    </section>
+
+    
     
 
     <section id="ten" style="height:33vh;background-color: rgb(232, 157, 157);"></section>

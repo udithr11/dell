@@ -710,7 +710,7 @@
     
     .four{
                     background-color:#141d28;
-                    padding:0rem 8.55rem
+                    padding:0rem 6rem
                 }
                 #four_heading_top{
         width:80%;margin:auto
@@ -728,16 +728,16 @@
                 width:100%;display:flex;justify-content: flex-end;padding-right:1.5rem;
             }
             .slider_image_inner{
-                aspect-ratio: 1.77777778;width:80%;
+               width:80%;
             }
             .four_left_box{
                 background-color:white;width:22rem; position: absolute; top:50%; left: 50%;  transform: translate(-161%, -50%);
             }
             .four_left_heading{
-                padding:1rem;
+                padding:1rem;height:auto;
             }
             .four_left_heading_2{
-                font-size:2rem;line-height:2.5rem;font-weight:200;padding-top:1rem;padding-bottom:0.75rem;
+                font-size:calc(1.4rem + 1.4vw);line-height:calc(1.5rem + 1.5vw);font-weight:200;padding-top:1rem;padding-bottom:0.75rem;
             }
             .four_left_heading_3{
                 font-size:1rem;
@@ -780,11 +780,16 @@
                 
             }
     
-    .mySwiper_1 .swiper-slide-prev,
+   
+    .mySwiper_res .swiper-slide-prev,
+    .mySwiper_res .swiper-slide-next + .swiper-slide{
+    filter: opacity(0.25);
+    }
+    
     .mySwiper_1 .swiper-slide-next {
     filter: opacity(0.25);
     }
-    #four_fun_1{position:absolute;top:50%;z-index:40;width:94%;margin-left: -6rem;}
+    #four_fun_1{position:absolute;top:50%;z-index:40;width:95%;margin-left: -4rem;}
     #four_fun_2{display:flex;justify-content: space-between;}
     #left_functionality_1{background-color:white;width:fit-content;padding:0.5rem;border-radius:5px}
     #four_fun_3{color:#0672cb;display:flex;}
@@ -800,6 +805,14 @@
     #play_button1{background-color:rgb(0, 0, 0);width:fit-content;padding:0.45rem 0.75rem;display:flex;display:none;cursor:pointer;align-items: center}
     #four_fun_11{padding-right:0.75rem;font-weight:200;color:white}
     #four_fun_12{color:white}
+    #four_swiper_res_new{padding:0rem 5rem}
+    .four_swiper_res_new_1{background-color:white}
+    #four_swiper_res_fun_1{display:flex;height:21rem;position:relative;z-index:100;margin-top:-21rem;justify-content: space-between;margin-right:-4rem;margin-left:-4rem;}
+    .four_swiper_res_fun_2{width:fit-content;padding:0.4rem;background-color:white;color:#0672cb;border-radius:3px}
+    .cl_fx{display:flex}
+    .swiper-slide-next-custom {
+            filter: opacity(0.25);
+        }
         </style>
     <div id="four_heading_top" >
         <div id="four_heading_1" >
@@ -811,18 +824,16 @@
     </div>
 
     <!-- .... -->
-        <div class="swiper mySwiper_1 four"  >
+        <div class="swiper mySwiper_1 four res_off"  >
     <div class="swiper-wrapper ">
       <div class="swiper-slide">
-        <!-- 1111111 -->
+        <!-- 1111111 --> 
     
         <div class="slider_main">
-            <div class="slider_image res_1365_off">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-g-series-5530nt-uhp-2501-04-in-promo-carousel-lf-1610x906-v2.jpg?wid=1610&hei=906">
+            <div class="slider_image ">
+                <img id="four_slider_1_img" class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/bb2501g0003-gl-bb-site-banner-fy25-latitude-9450-7350-1610x906-bg.jpg?wid=1610&hei=906">
             </div>
-            <div class="slider_image res_1365_on">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/g-series-cons-dell-aw-920k-310h-km7321w-uhp-2404-12-in-promo-carousel-lf-1210x906.jpg?wid=864&hei=648">
-            </div>
+           
             <div class="four_left_box" >
             <div class="four_left_heading">
                 <div>
@@ -852,12 +863,12 @@
             </div>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide"> 
         <!-- 222222 -->
     
         <div class="slider_main">
             <div class="slider_image">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/revised-india-bts-cons-dell-lifestyle-uhp-2501-09-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
+                <img id="four_slider_2_img" class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-vostro-5630nt-uhp-2501-03-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
             </div>
             <div class="four_left_box" >
             <div class="four_left_heading">
@@ -893,7 +904,7 @@
     
         <div class="slider_main">
             <div class="slider_image">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/artm-cons-dell-lifestyle-inspiron-7630nt-uhp-2501-03-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
+                <img id="four_slider_3_img" class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-g-series-5530nt-uhp-2501-04-in-promo-carousel-lf-1610x906-v2.jpg?wid=1610&hei=906">
             </div>
             <div class="four_left_box" >
             <div class="four_left_heading">
@@ -930,7 +941,7 @@
     
         <div class="slider_main">
             <div class="slider_image">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/heroes/revised-show-desktop-aio-cons-dell-inspiron-7730nt-km5221w-uhp-2502-01-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
+                <img id="four_slider_4_img" class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-s2723hc-uhp-2404-12-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
             </div>
             <div class="four_left_box" >
             <div class="four_left_heading">
@@ -967,7 +978,7 @@
     
         <div class="slider_main">
             <div class="slider_image">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/g-series-cons-dell-aw-920k-310h-km7321w-uhp-2404-12-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
+                <img id="four_slider_5_img" class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-sb-dell-poweredge-r750xs-uhp-2501-03-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
             </div>
             <div class="four_left_box" >
             <div class="four_left_heading">
@@ -1004,7 +1015,7 @@
     
         <div class="slider_main">
             <div class="slider_image">
-                <img class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/cs2404g0018-700634-gl-cs-co-fy24q4-site-banner-aw-m16-laptop-1610x906.jpg?wid=1610&hei=906">
+                <img id="four_slider_6_img" class="img-fluid slider_image_inner" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/g-series-cons-dell-aw-920k-310h-km7321w-uhp-2404-12-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906">
             </div>
             <div class="four_left_box" >
             <div class="four_left_heading">
@@ -1072,8 +1083,6 @@
         </div>
     </div>
     </div>
-    </div>
-    
     <script>
         var swiper_1 = new Swiper(".mySwiper_1", {
         effect: "slide",
@@ -1160,9 +1169,303 @@
             swiper_1.autoplay.disableOnInteraction = true;
         } 
         }
+
+        window.addEventListener('resize', function() {
+
+            var img1 = document.getElementById('four_slider_1_img');
+            var img2 = document.getElementById('four_slider_2_img');
+            var img3 = document.getElementById('four_slider_3_img');
+            var img4 = document.getElementById('four_slider_4_img');
+            var img5 = document.getElementById('four_slider_5_img');
+            var img6 = document.getElementById('four_slider_6_img');
+
+
+
+
+            var screenWidth = window.innerWidth;
+            if (screenWidth < 1365) {
+                img1.src = 'https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/b2b/en/product-launch/latitude/fy25-latitude-family/site-banners/9450-7350/bb2501g0003-gl-bb-site-banner-fy25-latitude-9450-7350-1208x906-bg.jpg?wid=864&hei=648'; 
+                img2.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-vostro-5630nt-uhp-2501-03-in-promo-carousel-lf-1210x906.jpg?wid=864&hei=648'; 
+                img3.src='https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-g-series-5530nt-uhp-2501-04-in-promo-carousel-lf-1210x906-v2.jpg?wid=864&hei=648';
+                img4.src='https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-s2723hc-uhp-2404-12-in-promo-carousel-lf-1210x906.jpg?wid=864&hei=648';
+                img5.src='https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-sb-dell-poweredge-r750xs-uhp-2501-03-in-promo-carousel-lf-1210x906.jpg?wid=864&hei=648';
+                img6.src='https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/g-series-cons-dell-aw-920k-310h-km7321w-uhp-2404-12-in-promo-carousel-lf-1210x906.jpg?wid=864&hei=648';
+
+            } else {
+                img1.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/bb2501g0003-gl-bb-site-banner-fy25-latitude-9450-7350-1610x906-bg.jpg?wid=1610&hei=906'; 
+                img2.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-vostro-5630nt-uhp-2501-03-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906'; 
+                img3.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-g-series-5530nt-uhp-2501-04-in-promo-carousel-lf-1610x906-v2.jpg?wid=1610&hei=906';
+                img4.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-s2723hc-uhp-2404-12-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906';
+                img5.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-sb-dell-poweredge-r750xs-uhp-2501-03-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906';
+                img6.src = 'https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/g-series-cons-dell-aw-920k-310h-km7321w-uhp-2404-12-in-promo-carousel-lf-1610x906.jpg?wid=1610&hei=906';
+
+            }
+        });
+
              
     </script>
-      
+    </div>
+
+
+    <!-- swiper___resssss -->
+
+    <div id="four_swiper_res_new" class="swiper mySwiper_res res_on">
+        <div class="swiper-wrapper" >
+            <!-- 1111 -->
+          <div  class="swiper-slide four_swiper_res_new_1">
+            <img  class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-s2723hc-uhp-2404-12-in-promo-carousel-lf-1210x906.jpg?wid=480&hei=360">
+            
+                <div class="four_left_heading" >
+                    
+                    
+                    <div>
+                        G SERIES GAMING LAPTOPS
+                    </div>
+                    <div class="four_left_heading_2">
+                        Essential Gaming Performance
+                    </div>
+                    <div class="four_left_heading_3">
+                        Upgrade your game with intense power,speed and graphics.
+                    </div>
+                
+                
+
+                    <a class="four_left_link_1" href="#">
+                                        <div class="four_left_link_1_inner" >
+                                            Shop Now <span class="material-symbols-outlined four_left_link_1_inner_span">
+                                                arrow_right_alt
+                                                </span>
+                                        </div>
+                    </a>
+                    <a class="four_left_link_2" href="#">
+                                        <div class="four_left_link_2_inner">
+                                            Learn More <span class="material-symbols-outlined four_left_link_2_inner_span">
+                                                arrow_right_alt
+                                                </span>
+                                        </div>
+                    </a>
+                
+                </div>
+          </div>
+
+          <!-- 22222 -->
+          <div  class="swiper-slide four_swiper_res_new_1">
+            <img  class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-sb-dell-poweredge-r750xs-uhp-2501-03-in-promo-carousel-lf-1210x906.jpg?wid=480&hei=360">
+            
+                <div class="four_left_heading">
+                    <div>
+                        POWERSTORE
+                    </div>
+                    <div class="four_left_heading_2">
+                        The Future of Storage
+                    </div>
+                    <div class="four_left_heading_3">
+                        Future-proof intelligent storage that redefines performance.
+                    </div>
+                    <a class="four_left_link_1" href="#">
+                                        <div class="four_left_link_1_inner" >
+                                            Shop Now <span class="material-symbols-outlined four_left_link_1_inner_span">
+                                                arrow_right_alt
+                                                </span>
+                                        </div>
+                    </a>
+                    <a class="four_left_link_2" href="#">
+                                        <div class="four_left_link_2_inner">
+                                            Learn More <span class="material-symbols-outlined four_left_link_2_inner_span">
+                                                arrow_right_alt
+                                                </span>
+                                        </div>
+                    </a>
+                </div>
+          </div> 
+          
+            <!-- 333 -->
+            <div  class="swiper-slide four_swiper_res_new_1">
+                <img  class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/g-series-cons-dell-aw-920k-310h-km7321w-uhp-2404-12-in-promo-carousel-lf-1210x906.jpg?wid=480&hei=360">
+                
+                    <div class="four_left_heading">
+                        <div>
+                            EVERYDAY ESSENTIALS
+                        </div>
+                        <div class="four_left_heading_2">
+                            High-Achieving Accessories
+                        </div>
+                        <div class="four_left_heading_3">
+                            Power your productivity with essential accessories - headsets, keyboards, mouse and more.
+                                    </div>
+                        <a class="four_left_link_1" href="#">
+                                            <div class="four_left_link_1_inner" >
+                                                Shop Now <span class="material-symbols-outlined four_left_link_1_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                        <a class="four_left_link_2" href="#">
+                                            <div class="four_left_link_2_inner">
+                                                Learn More <span class="material-symbols-outlined four_left_link_2_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                    </div>
+            </div>  
+            <!-- 444 -->
+            <div  class="swiper-slide four_swiper_res_new_1">
+                <img  class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-g-series-5530nt-uhp-2501-04-in-promo-carousel-lf-1210x906-v2.jpg?wid=480&hei=360">
+                
+                    <div class="four_left_heading">
+                        <div>
+                            G SERIES GAMING LAPTOPS
+                                    </div>
+                        <div class="four_left_heading_2">
+                            Essential Gaming Performance
+                                    </div>
+                        <div class="four_left_heading_3">
+                            Upgrade your game with intense power, speed and graphics.
+                                                </div>
+                        <a class="four_left_link_1" href="#">
+                                            <div class="four_left_link_1_inner" >
+                                                Shop Now <span class="material-symbols-outlined four_left_link_1_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                        <a class="four_left_link_2" href="#">
+                                            <div class="four_left_link_2_inner">
+                                                Learn More <span class="material-symbols-outlined four_left_link_2_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                    </div>
+            </div> 
+            <!-- 555 -->
+            <div  class="swiper-slide four_swiper_res_new_1">
+                <img  class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/b2b/en/product-launch/latitude/fy25-latitude-family/site-banners/9450-7350/bb2501g0003-gl-bb-site-banner-fy25-latitude-9450-7350-1208x906-bg.jpg?wid=480&hei=360">
+                
+                    <div class="four_left_heading">
+                        <div>
+                            NEW LATITUDE LAPTOPS
+                        </div>
+                        <div class="four_left_heading_2">
+                            AI-Enhanced Productivity
+                                    </div>
+                        <div class="four_left_heading_3">
+                            Unlock next-level computing with AI PCs and Intel Core Ultra Processors.
+                                    </div>
+                        <a class="four_left_link_1" href="#">
+                                            <div class="four_left_link_1_inner" >
+                                                Shop Now <span class="material-symbols-outlined four_left_link_1_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                        <a class="four_left_link_2" href="#">
+                                            <div class="four_left_link_2_inner">
+                                                Learn More <span class="material-symbols-outlined four_left_link_2_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                    </div>
+            </div> 
+            <!-- 666 -->
+            <div  class="swiper-slide four_swiper_res_new_1">
+                <img  class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/promo-carousel/show-cons-dell-vostro-5630nt-uhp-2501-03-in-promo-carousel-lf-1210x906.jpg?wid=480&hei=360">
+                
+                    <div class="four_left_heading">
+                        <div>
+                            VOSTRO LAPTOPS
+                        </div>
+                        <div class="four_left_heading_2">
+                            Any Task. Any Place.
+                                    </div>
+                        <div class="four_left_heading_3">
+                            Essential daily performance, built-in security and reliable support.
+                                    </div>
+                        <a class="four_left_link_1" href="#">
+                                            <div class="four_left_link_1_inner" >
+                                                Shop Now <span class="material-symbols-outlined four_left_link_1_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                        <a class="four_left_link_2" href="#">
+                                            <div class="four_left_link_2_inner">
+                                                Learn More <span class="material-symbols-outlined four_left_link_2_inner_span">
+                                                    arrow_right_alt
+                                                    </span>
+                                            </div>
+                        </a>
+                    </div>
+            </div> 
+
+        </div>
+        <div id="four_swiper_res_fun_1">
+            
+            <div class="swiper-button-prev_res">
+                <div class="four_swiper_res_fun_2" >
+                    <span  class="material-symbols-outlined cl_fx">
+                        arrow_back
+                        </span>
+
+                </div>
+            </div>
+            <div class="swiper-button-next_res">
+                <div class="four_swiper_res_fun_2">
+                    <span class="material-symbols-outlined cl_fx">
+                        arrow_forward
+                        </span>
+
+                </div>
+             </div>
+        </div>
+             
+
+      </div>
+        
+      <!-- Initialize Swiper -->
+      <script>
+       var swiper_res;
+
+function initSwiper() {
+    var slidesPerViewValue = window.innerWidth <= 767 ? 1 : 2; // Set slidesPerView based on screen size
+    swiper_res = new Swiper(".mySwiper_res", {
+        slidesPerView: slidesPerViewValue,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next_res",
+            prevEl: ".swiper-button-prev_res",
+        },
+    });
+
+    // Add click event listener to the next button
+    document.querySelector('.swiper-button-next_res').addEventListener('click', function() {
+        // Check if it's the last slide, then go to the first slide
+        if (swiper_res.isEnd) { 
+            swiper_res.slideTo(0);  
+        }
+    });
+}
+
+// Initialize Swiper when the page loads
+window.addEventListener('load', function() {
+    initSwiper();
+});
+
+// Re-initialize Swiper when the window is resized
+window.addEventListener('resize', function() {
+    if (swiper_res) {
+        swiper_res.destroy(); // Destroy the existing instance
+    }
+    initSwiper(); // Re-initialize Swiper based on the new screen size
+});
+        
+
+
+
+
+      </script>
     
     </section>
     

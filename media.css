@@ -32,6 +32,8 @@
 }
 
 @media (max-width: 1024px) {
+    
+    #six_main_container{width:100% !important;padding:1rem}
     .first_filter_main{
         padding-top:1rem !important;min-height: 25rem;
     }
@@ -72,6 +74,11 @@
     
 }
 
+@media (max-width: 850px) {
+    #background_video_1{display:none}
+    .five_14{display:none !important}
+}
+
 @media screen and (max-width: 767px) {
     .mySwiper_res .swiper-slide-next {
         filter: opacity(0.25);
@@ -80,6 +87,12 @@
 
 
 @media (max-width: 767px) {
+    .six_col_main{padding:0 !important}
+
+    .six_inner_icon_text{display:flex;align-items:center}
+    .six_col_main_inner_a{display:flex !important;}
+    .six_col_main_inner{margin-top:0.5rem !important;height:auto !important;padding:1rem !important}
+    
 .first_button_2{
     padding:0.5rem 1rem !important;
 }

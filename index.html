@@ -1469,6 +1469,406 @@ window.addEventListener('resize', function() {
     
     </section>
     
+    <section id="five">
+        <style>
+            .five_one{padding:0;position:relative;background: rgba(0, 0, 0, .7);}
+            .five_two{max-width:100%; min-height:40rem}
+            .five_three{width: 100%;}
+            .five_middle_filter{width:100%;height:100%;position:absolute;background: rgba(0, 0, 0, .7);top:0;left:0}
+            .five_middle_container{position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);width:55%}
+            .five_four{margin:auto;width:fit-content;text-align: center;color:white}
+            .five_five{font-size:16px;padding-bottom:0.5rem;font-weight:150}
+            .five_six{font-weight:100;padding-bottom:0.5rem;font-size: calc(1.75rem + 1.75vw);line-height: calc(2rem + 2vw);}
+            .five_seven{padding-bottom:2rem;font-weight:200}
+            .five_eight{background-color:#0672cb;width:fit-content;padding:0.45rem 0.75rem;display:flex;cursor:pointer;align-items: center;margin:auto;margin-bottom:1rem;text-decoration: none;}
+            .five_nine{color:white}
+            .five_ten{padding-left:0.75rem;font-weight:200;color:white}
+            .five_11{display:flex;padding-bottom:0.5rem;text-decoration: none;color:white;margin:auto;color:#ffffff;display:flex;justify-content: center;}
+            .five_12{display:flex;align-items:center;font-size:15px;font-weight:200;}
+            .five_13{font-size:2rem}
+            .five_14{position:absolute;bottom:0;left:0;width:85%;display:flex;justify-content:flex-end;}
+            .five_15{background-color:black;width:fit-content;padding:0.45rem 0.75rem;display:flex;cursor:pointer;align-items: center;margin-bottom:1rem}
+            .five_16{padding-right:0.75rem;font-weight:200;color:white}
+            #five_play_fun{display:none}
+
+        </style>
+        <div class="container-fluid five_one">
+            <div class="five_two" >
+                <video  id="background_video_1" class="five_three" autoplay muted loop>
+                    <source src="media/5752734-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="five_middle_filter"></div>
+            <div class="five_middle_container" >
+                <div class="five_four">
+                    <div class="five_five" >DELL TECHNOLOGIES + MERMAIDS</div>
+                    <div class="five_six">Creating More Equal Ocean Access</div>
+                    <div class="five_seven">Technology gives freediver and ocean advocate, Zandile Ndhlovu, freedom to grow
+                         The Black Mermaid Foundation and continue to make spaces where everyone belongs.
+                    </div>
+                    <a class="five_eight" href="#" >
+                        <span  class="material-symbols-outlined five_nine">
+                            play_circle
+                        </span>
+                        <div class="five_ten">Play Video</div>
+                        
+                    </a>
+                    <a href="#" class="five_11" >
+                        <div class="five_12" >
+                            Discover how we're shaping a better future today  <span class="material-symbols-outlined five_13">
+                                arrow_right_alt
+                                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="five_14">
+            
+                <div id="five_pause_fun" class="five_15"  onclick="_five_pause()" >
+                    
+                    <div class="five_16">Pause</div>
+                    <span  class="material-symbols-outlined five_nine">
+                        pause_circle
+                    </span>
+                </div>
+                <div id="five_play_fun" class="five_15"  onclick="_five_play()" >
+                    
+                    <div class="five_16" > Play</div>
+                    <span  class="material-symbols-outlined five_nine">
+                        play_circle
+                    </span>
+                </div>
+            
+            </div>
+        </div>
+
+        <script>
+            function _five_pause()
+            {
+                 document.getElementById('five_play_fun').style.display="flex";
+                 document.getElementById('five_pause_fun').style.display='none';
+                 document.getElementById('background_video_1').pause()
+                
+            }
+            function _five_play()
+            {
+                 document.getElementById('five_play_fun').style.display="none";
+                 document.getElementById('five_pause_fun').style.display='flex';
+                 document.getElementById('background_video_1').play()
+
+                
+            }
+
+        </script>
+    </section>
+
+
+    <section id="six" >
+        <style>
+            #six{
+                background-color:#1d2c3b;position:relative;z-index:5;margin-top:-0.5rem;padding-bottom:3.5rem;
+            }
+            #six_main_container{
+                width:80%;margin:auto;color:white;
+            }
+            #six_heading_container{
+                /* width:50%; */
+            }
+            #six_heading_1{
+                font-weight:250;padding-top:5rem;
+            }
+            #six_heading_2{
+                font-size:2.5rem;line-height:3rem;font-weight:100;padding:1rem 0rem;
+            }
+            #six_heading_3{
+                font-weight:250;padding-bottom:1.5rem
+            }
+            #six_container_next{
+                padding:0;
+            }
+            #six_container_next_row{
+                padding:0;margin:0;
+            }
+            .six_col_main{
+                padding:0;padding-right:1rem;
+            }
+            .six_col_main_inner{
+                padding:1.5rem;background-color:rgba(245, 246, 247, .1);height:10rem;
+            }
+            .six_col_main_inner_a{
+                text-align:center;text-decoration: none;
+            }
+            .six_inner_icon{
+                color:rgb(148, 220, 247);
+            }
+            .six_inner_icon_real{
+                font-size:4rem;
+            }
+            .six_inner_icon_text{
+                color:white;font-weight:250;font-size: calc(0.55rem + 0.55vw);line-height: 1.3;
+            }
+            .six_three_main{
+                padding:0;text-align:center;
+            }
+            .six_three_logo{
+                font-size:3rem;
+            }
+            .six_three_text{
+                font-weight:200
+            }
+            #six_main_container{padding-top:1rem}
+        </style>
+    
+    
+        <div id="six_main_container" >
+            <div id="six_heading_container">
+            <div  id="six_heading_1">Dell Support</div>
+            <div id="six_heading_2" >We're Here to Help</div>
+            <div id="six_heading_3" >From offering expert advice to solving complex problems, we've got you <br class="res_off"> covered.</div>
+    
+            
+            </div>
+            <div id="six_container_next" class="container-fluid">
+            <div id="six_container_next_row" class="row">
+                <div id="six_1"  class="col six_col_main">
+                    <!-- Your content for box 1 -->
+                    <div class="six_col_main_inner">
+                    <a class="six_col_main_inner_a" href="#">
+                        <div class="six_inner_icon">
+                            <span class="material-symbols-outlined six_inner_icon_real">
+                                home
+                            </span>
+                        </div>
+                            <div class="six_inner_icon_text">
+                                Support Home
+                            </div>
+                    </a>
+                </div>
+                  </div>
+    
+                  <div id="six_5" class="col six_col_main">
+                    <!-- Your content for box 2 -->
+                    <div class="six_col_main_inner">
+                    <a class="six_col_main_inner_a" href="#">
+                        <div class="six_inner_icon">
+                            <span class="material-symbols-outlined six_inner_icon_real">
+                                settings
+                            </span>
+                        </div>
+                            <div class="six_inner_icon_text">
+                                Drivers and Downloads
+                            </div>
+                    </a>
+                    </div>
+                  </div>
+    
+                  <div id="six_2" class="col six_col_main">
+                    <!-- Your content for box 3 -->
+                    <div class="six_col_main_inner">
+                    <a class="six_col_main_inner_a" href="#">
+                        <div class="six_inner_icon">
+                            <span class="material-symbols-outlined six_inner_icon_real">
+                                support_agent
+                            </span>
+                        </div>
+                            <div class="six_inner_icon_text">
+                                Order Support
+                            </div>
+                    </a>
+                </div>
+                  </div>
+    
+                  <div id="six_3" class="col six_col_main">
+                    <!-- Your content for box 4 -->
+                    <div class="six_col_main_inner">
+                    <a class="six_col_main_inner_a" href="#">
+                        <div class="six_inner_icon">
+                            <span class="material-symbols-outlined six_inner_icon_real">
+                                verified
+                            </span>
+                        </div>
+                            <div class="six_inner_icon_text">
+                                Warranty and Contracts
+                            </div>
+                    </a>
+                </div>
+                  </div>
+                  <div id="six_4" class="col six_col_main" style="padding:0">
+                    <!-- Your content for box 5 -->
+                    <div class="six_col_main_inner">
+                    <a class="six_col_main_inner_a" href="#">
+                        <div class="six_inner_icon">
+                            <span class="material-symbols-outlined six_inner_icon_real">
+                                headset_mic
+                            </span>
+                        </div>
+                            <div class="six_inner_icon_text">
+                                Parts and Upgrades
+                            </div>
+                    </a>
+                </div>
+                  </div>
+    
+    
+                  
+                  
+            </div>
+        
+            </div>
+    
+        <div id="six_container_three" >
+            <div  style="display:flex;justify-content:flex-end;padding-top:1.5rem;">
+                <div id="six_image_container" style="position:relative;width:59.5%;height:38rem;;background-image: url('https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/my-account-or-dell-premier/dell-homepage-account-desktop-pan-dell-bulk-0455.jpg?wid=1200&hei=675');background-size:cover;background-position:59% 0">
+                
+                    <div style="text-align: center;background-color:#002a58;width:36rem; position: absolute; top:50%; left: 50%;  transform: translate(-141%, -50%);">
+                        <div style="padding:1rem">
+                        <div style="font-size:2rem;line-height:2.5rem;font-weight:100;padding-top:0.5rem;padding-bottom:1rem">My Account</div>
+                        <div style="font-weight:200">My Account is an easy, more centralized way to manage your tech.</div>
+                        <div style="display:flex;padding-bottom: 0.5rem;">
+                        
+                            <div style="width:40%;background-color:white;margin:1rem;margin-right:0.5rem">
+                                <div style="padding:0.75rem;color:black;font-weight:250">Sign In</div>
+                                
+                            </div>
+                            <div style="width:60%;background-colorr:white;margin:1rem;margin-left:0.5rem;border:1px solid white">
+                                <div style="padding:0.75rem;color:rgb(255, 255, 255);font-weight:250">Create an Account</div>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="container-fluid" style="padding:0;padding-bottom:1rem">
+                            <div class="row" style="padding:0;margin:0">
+                                <div class="col six_three_main">
+                                    <span  class="material-symbols-outlined six_three_logo">star</span>
+                                    <div class="six_three_text">Easy Ordering</div>
+                                </div>
+                                
+                                <div class="col six_three_main" >
+                                    <span  class="material-symbols-outlined six_three_logo">find_in_page</span>
+                                    <div class="six_three_text"> Order Tracking</div>
+                                </div>
+    
+                                <div class="col six_three_main" >
+                                    <span  class="material-symbols-outlined six_three_logo">account_circle</span>
+                                    <div class="six_three_text"> Profile Setting</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <script>
+            function removeColClass() {
+                var element1 = document.getElementById('six_1');
+                var element2 = document.getElementById('six_2');
+                var element3 = document.getElementById('six_3');
+                var element4 = document.getElementById('six_4');
+                var element5 = document.getElementById('six_5');
+
+                if (window.innerWidth < 767) {
+                    element1.classList.remove('col');
+                    element2.classList.remove('col');
+                    element3.classList.remove('col');
+                    element4.classList.remove('col');
+                    element5.classList.remove('col');
+
+
+                } else {
+                    element1.classList.add('col');
+                    element2.classList.add('col');
+                    element3.classList.add('col');
+                    element4.classList.add('col');
+                    element5.classList.add('col');
+                }
+            }
+    
+            // Call the function on page load and window resize
+            window.addEventListener('load', removeColClass);
+            window.addEventListener('resize', removeColClass);
+        </script>
+    
+    
+    </section>
+
+
+    <section id="seven">
+        <div class="container-fluid five_one">
+            <div class="five_two" >
+                <video  id="background_video_2" class="five_three" autoplay muted loop>
+                    <source src="media/3209828-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="five_middle_filter"></div>
+            <div class="five_middle_container" >
+                <div class="five_four">
+                    <div class="five_five" >ADVANCING SUSTAINABILITY</div>
+                    <div class="five_six">At the Core of Everything We Do</div>
+                    <div class="five_seven">Creating sustainable products and solutions that drive change.
+                    </div>
+                    <a class="five_eight" href="#" >
+                        <span  class="material-symbols-outlined five_nine">
+                            play_circle
+                        </span>
+                        <div class="five_ten">Play Video</div>
+                        
+                    </a>
+                    <a href="#" class="five_11" >
+                        <div class="five_12" >
+                            Discover how we're shaping a better future today  <span class="material-symbols-outlined five_13">
+                                arrow_right_alt
+                                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="five_14">
+            
+                <div id="five_pause_fun_2" class="five_15"  onclick="_five_pause()" >
+                    
+                    <div class="five_16">Pause</div>
+                    <span  class="material-symbols-outlined five_nine">
+                        pause_circle
+                    </span>
+                </div>
+                <div id="five_play_fun_2" class="five_15"  onclick="_five_play()" >
+                    
+                    <div class="five_16" > Play</div>
+                    <span  class="material-symbols-outlined five_nine">
+                        play_circle
+                    </span>
+                </div>
+            
+            </div>
+        </div>
+
+        <script>
+            function _five_pause()
+            {
+                 document.getElementById('five_play_fun_2').style.display="flex";
+                 document.getElementById('five_pause_fun_2').style.display='none';
+                 document.getElementById('background_video_2').pause()
+                
+            }
+            function _five_play()
+            {
+                 document.getElementById('five_play_fun_2').style.display="none";
+                 document.getElementById('five_pause_fun_2').style.display='flex';
+                 document.getElementById('background_video_2').play()
+
+                
+            }
+
+        </script>
+    </section>
 
 
 

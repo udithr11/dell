@@ -1,4 +1,9 @@
 @media (max-width: 1365px) {
+    #nine_7{font-size:2rem !important;line-height:2.2rem !important}
+    .six_7{height:32rem !important}
+    .six_8{width:50% !important}
+    .six_8_special{width:50% !important;top:20% !important}
+
     .first_filter_main{
         padding:7rem 3.23rem 2.5rem 2rem ;
     }
@@ -9,6 +14,14 @@
     .four_left_box{left:57% !important}
 
 }
+@media (max-width: 1256px) {
+    .six_8{top:22% !important}
+    .six_8_special{top:20% !important}
+
+
+}
+
+
 
 @media (max-width: 1199px) {
     #first_down_arrow{
@@ -32,6 +45,8 @@
 }
 
 @media (max-width: 1024px) {
+    #nine_1{width:100% !important;padding:1rem}
+    #eight_main_container{width:100% !important;padding:1rem}
     
     #six_main_container{width:100% !important;padding:1rem}
     .first_filter_main{
@@ -73,6 +88,15 @@
     
     
 }
+@media (max-width: 930px) {
+    .six_8_special{top:17% !important}
+    #nine_5{padding-top:2rem !important}
+
+}
+@media (max-width: 879px) {
+    .six_8_special{top:12.5% !important}
+
+}
 
 @media (max-width: 850px) {
     #background_video_1{display:none}
@@ -80,6 +104,11 @@
 }
 
 @media screen and (max-width: 767px) {
+    #nine_2{padding-bottom:0rem !important}
+    #nine_5{padding:0;padding:2rem !important}
+    #nine_12{height:auto !important}
+    #nine_11{order:1 !important;padding:0rem !important}
+    #nine_4{order:2 !important}
     .mySwiper_res .swiper-slide-next {
         filter: opacity(0.25);
     }
@@ -87,6 +116,17 @@
 
 
 @media (max-width: 767px) {
+    .eight_5_right{padding-left:0 !important}
+    .eight_6{width:23% !important}
+    .res_off_767{display:none !important}
+    .res_on_767{display:block !important}
+    .six_8{position: relative !important; width:100% !important}
+    .six_8_special{position: relative !important; width:100% !important}
+
+
+    .six_7{width:100% !important}
+    .six_6{flex-direction:column }
+    .six_7{width:100% !important;background-size: contain!important;height:19rem !important;}
     .six_col_main{padding:0 !important}
 
     .six_inner_icon_text{display:flex;align-items:center}

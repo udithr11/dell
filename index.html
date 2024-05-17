@@ -202,7 +202,6 @@
               </div>
               
             </div>
-            <!-- <div id="functionalities_main_container" class="res_off">
             <div id="swiper_functionalities" >
                 <div id="swiper_functionalities_inner">
                     <div class="res_off">
@@ -248,7 +247,7 @@
 
             <div id="functionalities_main_container">
         <div id="functionalities_res" >
-            <div id="functionalities_res_new" style="">
+            <div id="functionalities_res_new" >
                     <div class="first_arrow_container"  style="display:flex">
                         <span  class="material-symbols-outlined swiper-button-prevvv first_arrow_one">
                             arrow_left_alt
@@ -276,11 +275,11 @@
                         </span>
                     </div>
                 </div>
-                    <div id="functionalities_arrow_res" style="">
+                    <a id="functionalities_arrow_res" href="#second" >
                         <span  class="material-symbols-outlined first_down_arrow_res">
                             keyboard_arrow_down
                         </span>
-                    </div>
+                    </d>
                     
                 
             
@@ -311,7 +310,7 @@
                 prevEl: ".swiper-button-prevvv",
               },
               autoplay: {
-              delay: 112500, // Adjust the delay (in ms) between slides as needed
+              delay: 2500, // Adjust the delay (in ms) between slides as needed
               disableOnInteraction: false, // Set to false to prevent autoplay from stopping when user interacts with the slider
             },
             loop: true,
@@ -343,7 +342,7 @@
 
         <style>
             #second{
-                background-color:#0a0e14;margin-top:-1rem;padding-top:1rem;padding-bottom:2rem;
+                background-color:#0a0e14;margin-top:4rem;padding-top:1rem;padding-bottom:2rem;
             }
             
             .second_col_1{
@@ -1101,7 +1100,7 @@
         prevEl: ".swiper-button-prev1",
         },
         autoplay: {
-        delay: 112500, 
+        delay: 2500, 
         disableOnInteraction: false, // Set to false to continue autoplay even after user interaction
         waitForTransition: true, // Wait for transitions to finish before changing slides
         },
@@ -1403,6 +1402,10 @@
             </div> 
 
         </div>
+        <!-- <div> -->
+            <div  style="width:100%;display:flex;justify-content:center;margin-top:0.5rem" class="swiper-pagination_9"></div>
+
+        <!-- </div> -->
         <div id="four_swiper_res_fun_1">
             
             <div class="swiper-button-prev_res">
@@ -1422,6 +1425,8 @@
                 </div>
              </div>
         </div>
+        
+
              
 
       </div>
@@ -1439,6 +1444,15 @@ function initSwiper() {
             nextEl: ".swiper-button-next_res",
             prevEl: ".swiper-button-prev_res",
         },
+        autoplay: {
+        delay: 2500, 
+        disableOnInteraction: false, // Set to false to continue autoplay even after user interaction
+        waitForTransition: true, // Wait for transitions to finish before changing slides
+        },
+        pagination: {
+        el: ".swiper-pagination_9",
+        clickable: true,
+      },
     });
 
     // Add click event listener to the next button
@@ -2273,11 +2287,11 @@ window.addEventListener('resize', function() {
 <section id="ten" class="ten_1">
     <style>
         #ten{background-color:#002a58;color:white}
-        .ten_number{
-            height:3.5rem;width:3.5rem;border-radius:100px;background-color:white;border:1px solid #d2d2d2;color:black;display:flex;justify-content: center;align-items: center;margin:0rem 0.5rem
+        .ten_number{cursor:pointer;
+            padding:1rem 1.5rem;border-radius:100px;background-color:white;border:1px solid #d2d2d2;color:black;display:flex;justify-content: center;align-items: center;margin:0rem 0.5rem
         }
         .ten_1{width:100%;padding:1rem;font-weight:300;font-size:15px}
-        .ten_2{text-align:center}
+        .ten_2{text-align:center;padding-top:1.5rem}
         .ten_3{display:flex;align-items:center;justify-content: center;padding-top:1rem}
         .ten_4{display:flex;justify-content: flex-end;height:1.5rem;width:3rem;background-color: white;;border:1px solid #d2d2d2;color:#839db4;border-radius:11px;justify-content: center;align-items:center;font-size:13px}
         .ten_4_main{display:flex;justify-content:flex-end}
@@ -2286,123 +2300,483 @@ window.addEventListener('resize', function() {
         .ten_number:hover{
             border:2px solid black; height:3.5rem;width:3.5rem;background-color:#d2d2d2
         }
-        #survey_1{position: relative;
-    left: 0%; background-color: red;width:100%;
-    transition: left 0.75s ease;}
-        #survey_2{position: relative;
-    left: 100%; background-color: red;width:100%;
-    transition: left 0.75s ease;}
-    #survey_3{position: relative;
-    left: 200%; background-color: red;width:100%;
-    transition: left 0.75s ease;}
+        .ten_text_align{text-align: center;}
+        .ten_rating_new{display:none;padding-top:1rem;
+            
+        }
+        .ten_height_adj{padding-bottom:1rem}
+
+       
       
     </style>
 
 
-<div class="swiper mySwiper">
+<div class="swiper mySwiper_ten" style="position:relative"> 
     <div class="swiper-wrapper">
         <!-- 111 -->
       <div class="swiper-slide">
-        <div id="survey_1" >
+        <!-- <div id="survey_1" > -->
             <div class="ten_4_main">
-            <div class="ten_4">1/4</div>
+            <!-- <div id="ten_1_4" class="ten_4">1/4</div> -->
             </div>
             <div class="ten_2" >Based on my visit today, I would say Dell Technologies is...</div>
-            <div class="ten_3" >
+            <div class="ten_3 ten_height_adj" >
+                <div class="ten_text_align">Not at all innovative</div>
+                <div onclick="question_()" class="ten_number ten_special_left" >1</div>
+                <div onclick="question_()" class="ten_number" >2</div>
+                <div onclick="question_()" class="ten_number" >3</div>
+                <div onclick="question_()" class="ten_number" >4</div>
+                <div onclick="question_()" class="ten_number" >5</div>
+                <div onclick="question_()" class="ten_number" >6</div>
+                <div onclick="question_()" class="ten_number ten_special_right" >7</div>
+                <div class="ten_text_align">Extremely innovative</div>
+            </div>
+            <div class="ten_rating_new">
                 <div>Not at all innovative</div>
-                <div onclick="question_1()" class="ten_number ten_special_left" >1</div>
-                <div onclick="question_1()" class="ten_number" >2</div>
-                <div onclick="question_1()" class="ten_number" >3</div>
-                <div onclick="question_1()" class="ten_number" >4</div>
-                <div onclick="question_1()" class="ten_number" >5</div>
-                <div onclick="question_1()" class="ten_number" >6</div>
-                <div onclick="question_1()" class="ten_number ten_special_right" >7</div>
                 <div>Extremely innovative</div>
             </div>
-        </div>
+        <!-- </div> -->
       </div>
       <!-- 2222 -->
       <div class="swiper-slide">
-        <div id="survey_2" >
+        <!-- <div id="survey_2" > -->
             <div class="ten_4_main">
-            <div class="ten_4">2/4</div>
+            <!-- <div id="ten_2_4" class="ten_4">2/4</div> -->
             </div>
             <div class="ten_2" >The Dell Technologies brand on this site is...</div>
-            <div class="ten_3" >
+            <div class="ten_3 ten_height_adj" >
+                <div class="ten_text_align">Not at all innovative</div>
+                <div onclick="question_()" class="ten_number ten_special_left" >1</div>
+                <div onclick="question_()" class="ten_number" >2</div>
+                <div onclick="question_()" class="ten_number" >3</div>
+                <div onclick="question_()" class="ten_number" >4</div>
+                <div onclick="question_()" class="ten_number" >5</div>
+                <div onclick="question_()" class="ten_number" >6</div>
+                <div onclick="question_()" class="ten_number ten_special_right" >7</div>
+                <div class="ten_text_align">Extremely innovative</div>
+            </div>
+            <div class="ten_rating_new">
                 <div>Not at all innovative</div>
-                <div onclick="question_2()" class="ten_number ten_special_left" >1</div>
-                <div onclick="question_2()" class="ten_number" >2</div>
-                <div onclick="question_2()" class="ten_number" >3</div>
-                <div onclick="question_2()" class="ten_number" >4</div>
-                <div onclick="question_2()" class="ten_number" >5</div>
-                <div onclick="question_2()" class="ten_number" >6</div>
-                <div onclick="question_2()" class="ten_number ten_special_right" >7</div>
                 <div>Extremely innovative</div>
             </div>
-        </div>
+        <!-- </div> -->
       </div>
       <!-- 3333 -->
-      <div class="swiper-slide"><div id="survey_3" >
+      <div class="swiper-slide">
+        <!-- <div id="survey_3" > -->
         <div class="ten_4_main">
-        <div class="ten_4">3/4</div>
+        <!-- <div id="ten_3_4" class="ten_4">3/4</div> -->
         </div>
         <div class="ten_2" >The content featured on this page is...</div>
-        <div class="ten_3" >
+        <div class="ten_3 ten_height_adj" >
+            <div class="ten_text_align">Not at all innovative</div>
+            <div onclick="question_()" class="ten_number ten_special_left" >1</div>
+            <div onclick="question_()" class="ten_number" >2</div>
+            <div onclick="question_()" class="ten_number" >3</div>
+            <div onclick="question_()" class="ten_number" >4</div>
+            <div onclick="question_()" class="ten_number" >5</div>
+            <div onclick="question_()" class="ten_number" >6</div>
+            <div onclick="question_()" class="ten_number ten_special_right" >7</div>
+            <div class="ten_text_align">Extremely innovative</div>
+        </div>
+        <div class="ten_rating_new">
             <div>Not at all innovative</div>
-            <div onclick="question_3()" class="ten_number ten_special_left" >1</div>
-            <div onclick="question_3()" class="ten_number" >2</div>
-            <div onclick="question_3()" class="ten_number" >3</div>
-            <div onclick="question_3()" class="ten_number" >4</div>
-            <div onclick="question_3()" class="ten_number" >5</div>
-            <div onclick="question_3()" class="ten_number" >6</div>
-            <div onclick="question_3()" class="ten_number ten_special_right" >7</div>
             <div>Extremely innovative</div>
         </div>
+    <!-- </div> -->
     </div>
+          <!-- 4444 -->
+
+    <div class="swiper-slide">
+       
+
+        <div  id="ten_unique_4" style="display:flex;width:100%;text-align:center;padding-top:1rem;justify-content: center;">
+        <div style="padding-right:1rem;padding-top:0.75rem">Is there anything specific about your experience today that you'd like to share?</div>
+        <div id="ten_unique_4_extra" >
+            <div style="display:flex;flex-direction: column;width:fit-content">
+            <textarea id="feedbackTextarea" style="padding:0.5rem" placeholder="Your feedback will help us improve our site." cols="38" rows="3" maxlength="500"></textarea>
+            <div  id="charCount" style="display:flex;justify-content: flex-end;"></div>
+            <button onclick="question_()" style="width:fit-content;border:none;padding:0.5rem 1rem;margin-bottom:1rem" id="submitButton" type="submit">Submit</button>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div style="min-height:7rem;padding:1rem;text-align: center;width:100%;display:flex;align-items: center;justify-content: center;">
+        Thank You for your feedback.
+        </div>
     </div>
       
     </div>
     
+    <div id="pagination_ten" style="height: 1.5rem;color:black;border:1px solid #a9aeb3;position:absolute;top:0;left:93%;
+    width: 3rem;    letter-spacing: 2px;
+    color:rgb(99,99,99);
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 10px;" class="swiper-pagination_ten"></div>
+
   </div>
-    <!-- 1111 -->
-    
-
-    <!-- 222 -->
-    
-
-     <!-- 333 -->
+   
      
-
-    <script>
-        function question_1(){
-            document.getElementById('survey_1').style.left='-200%';
-            document.getElementById('survey_2').style.left = '-100';
-            document.getElementById('survey_3').style.left = '200%';
-
-        }
-
-        function question_2(){
-            document.getElementById('survey_2').style.left='100%';
-            document.getElementById('survey_3').style.left = '0';
-        }
-    </script>
      <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+        var swiper_ten = new Swiper(".mySwiper_ten", {
+            pagination: {
+        el: ".swiper-pagination_ten",
+        type: "fraction",
+      },autoHeight: true,
         });
+        function question_() {
+        
+        swiper_ten.slideNext();
+    }
+
+    const textarea = document.getElementById('feedbackTextarea');
+const charCountElement = document.getElementById('charCount');
+
+// Set initial character count
+charCountElement.textContent = `0 of ${textarea.maxLength}`;
+
+textarea.addEventListener('input', updateCharCount);
+
+function updateCharCount() {
+    const maxLength = textarea.maxLength;
+    const currentLength = textarea.value.length;
+    charCountElement.textContent = `${currentLength} of ${maxLength}`; // Update the character count element
+}
+
+
       </script>
     
 </section>
 
+<section id="eleven" >
+    <style>
+        #eleven{background-color:rgb(240,240,240);padding:2rem 2rem;padding-top:0}
+        #e_1{padding:0;margin:0}
+        #e_2{padding:0;margin:0}
+        .e_3{font-size:14px;background-colorr:rgb(132, 92, 92);font-weight:500;padding-top:2rem}
+        .e_4{display:flex;align-items:center;font-weight:500;color:rgb(99,99,99)}
+        #e_5{padding-right:0.25rem}
+        .e_sub{font-weight:300}
+        .e_6{text-decoration: none;cursor:pointer;color:rgb(107, 107, 107);display:block;padding-top:1rem;font-weight:300}
+        .last_acc_space{padding-top:0.5rem;padding-bottom:0.5rem}
+        .last_acc_space_middle{margin:0.5rem 0}
+        .accordion-body{padding:0.5rem 1rem;box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);}
+        .accordion-item:first-of-type{border-radius:0}
+        .accordion{--bs-accordion-bg:transparent;  --bs-accordion-btn-focus-box-shadow:none;--bs-accordion-btn-active-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}
+        .accordion-button:not(.collapsed){color:rgb(107, 107, 107);background-color:transparent}
+        .accordion-item:last-of-type .accordion-button.collapsed{border-radius:0}
+        .accordion-item{border:none}
+        
 
 
+    </style>
+    <div id="e_1" class="container-fluid res_off_767">
+        <div id="e_2" class="row" >
+            <!-- 111 -->
+            <div class="col-lg-3 col-md-6 e_3" >
+                <div class="e_4">
+                    <span id="e_5"  class="material-symbols-outlined">
+                        language
+                    </span>
+                    IN/EN
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" >Site Map</a>
+                </div>
+                
+
+            </div>
+            <!-- 222 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Account
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" >My Account</a>
+                    <a class="e_6" href="#" >Order Status</a>
+                    <a class="e_6" href="#" >My Products</a>
+                </div>
+            </div>
+            <!-- 3333 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Support
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" >Support Home</a>
+                    <a class="e_6" href="#" >Contact Technical Support </a>
+                    <a class="e_6" href="#" >Returns </a>
+                </div>
+            </div>
+
+            <!-- 4444 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Connect with Us
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" >Community</a>
+                    <a class="e_6" href="#" >Contact Us </a>
+                </div>
+            </div>
+            <!-- 55555 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Our Offerings
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" >APEX </a>
+                    <a class="e_6" href="#" >Products </a>
+                    <a class="e_6" href="#" >Solutions </a>
+                    <a class="e_6" href="#" >Services </a>
+                    <a class="e_6" href="#" >Deals </a>
+
+                </div>
+            </div>
+            <!-- 66666 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Our Company
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" > Who We Are</a>
+                    <a class="e_6" href="#" >Careers </a>
+                    <a class="e_6" href="#" >Dell Technologies Capital </a>
+                    <a class="e_6" href="#" >Investors </a>
+                    <a class="e_6" href="#" >Newsroom </a>
+                    <a class="e_6" href="#" >Perspectives </a>
+                    <a class="e_6" href="#" >Recycling </a>
+                    <a class="e_6" href="#" >ESG & Impact </a>
+                    <a class="e_6" href="#" >Customer Stories </a>
+
+                </div>
+            </div>
+            <!-- 7777 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Our Partners
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" > Find a Partner</a>
+                    <a class="e_6" href="#" >OEM Solutions </a>
+                    <a class="e_6" href="#" >Partner Program </a>
+                </div>
+            </div>
+            <!-- 8888 -->
+            <div class="col-lg-3 col-md-6  e_3" >
+                <div class="e_4">
+                    Resources
+                </div>
+                <div class="e_sub">
+                    <a class="e_6" href="#" > Blog</a>
+                    <a class="e_6" href="#" >Events </a>
+                    <a class="e_6" href="#" >Dell Learning Centre </a>
+                    <a class="e_6" href="#" >Privacy Centre </a>
+                    <a class="e_6" href="#" >Resource Library </a>
+                    <a class="e_6" href="#" >Security & Trust Centre </a>
+                    <a class="e_6" href="#" >Trial Software Downloads </a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="res_on_767">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Account
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div style="padding-left:2rem">
+                        <div class="last_acc_space">My Account</div>
+                        <div class="last_acc_space last_acc_space_middle">Order Status</div>
+                        <div class="last_acc_space">My Products</div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Support
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div style="padding-left:2rem">
+                        <div class="last_acc_space">Support Home</div>
+                        <div class="last_acc_space last_acc_space_middle">Contact Technical Support</div>
+                        <div class="last_acc_space"> Returns</div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Connect with Us
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div style="padding-left:2rem">
+                        <div class="last_acc_space"> Community</div>
+                        <div class="last_acc_space"> Contact Us</div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding-left:1.25rem;padding-top:0.5rem">Site Map</div>
+          <div  style="padding-left:1.25rem;padding-top:1.5rem;">
+            <div class="d-flex" style="margin-left:-0.2rem">
+            <span   class="material-symbols-outlined">
+                language
+            </span>
+            IN/EN
+        </div>
+        </div>
+        <div style="padding-top:3rem"></div>
+        <div class="accordion" id="accordionExample1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Our Offerings
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                    <div style="padding-left:2rem">
+                        <div class="last_acc_space">APEX</div>
+                        <div class="last_acc_space last_acc_space_middle">Products</div>
+                        <div class="last_acc_space last_acc_space_middle">Solutions</div>
+                        <div class="last_acc_space last_acc_space_middle">Services</div>
+
+                        <div class="last_acc_space">Deals</div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  Our Company
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                    <div style="padding-left:2rem">
+                        <div class="last_acc_space"> Who we are</div>
+                        <div class="last_acc_space last_acc_space_middle">Careers  </div>
+                        <div class="last_acc_space last_acc_space_middle">Dell Technologies Capital  </div>
+                        <div class="last_acc_space last_acc_space_middle">Investors  </div>
+                        <div class="last_acc_space last_acc_space_middle">Newsroom  </div>
+                        <div class="last_acc_space last_acc_space_middle">Perspectives  </div>
+                        <div class="last_acc_space last_acc_space_middle">Recycling  </div>
+                        <div class="last_acc_space last_acc_space_middle">ESG & Impact  </div>
+
+                        <div class="last_acc_space"> Customer Stories</div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Our Partners
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                    <div style="padding-left:2rem">
+                        <div class="last_acc_space"> Find a Partner</div>
+                        <div class="last_acc_space last_acc_space_middle">OEM Solutions  </div>
+
+                        <div class="last_acc_space"> Partner Program</div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    Resources
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample1">
+                  <div class="accordion-body">
+                      <div style="padding-left:2rem">
+                          <div class="last_acc_space">Blog</div>
+                          <div class="last_acc_space last_acc_space_middle">Events  </div>
+                          <div class="last_acc_space last_acc_space_middle">Dell Learning Centre  </div>
+                          <div class="last_acc_space last_acc_space_middle">Privacy Centre  </div>
+                          <div class="last_acc_space last_acc_space_middle">Resource Library  </div>
+                          <div class="last_acc_space last_acc_space_middle">Security & Trust Centre  </div>
+                         
+  
+                          <div class="last_acc_space"> Trial Software Downloads</div>
+                      </div>
+  
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+
+    </div>
+
+</section>
+
+<section id="twelve" >
+    <style>
+        #twelve{padding:1rem 2.5rem;background-color:rgb(240,240,240)}
+        .tw_1{padding-right:2rem;font-weight:300;font-size:14px;padding-top:1rem}
+        .tw_2{display:flex;width:fit-content;color:#636363;flex-wrap: wrap;}
+        #tw_22{font-size: 15px;font-weight:500;padding-bottom:2rem}
+        .tw_4{padding-right:2rem;padding-top:1rem}
+
+
+    </style>
+    <div id=tw_22 class="tw_2" >
+    <div class="tw_4" >Dell Technologies</div>
+    <div  class="tw_4" >Dell Premier</div>
+    </div>
+    <div  class="tw_2" >
+        <div class="tw_1">Copyright © 2024 Dell Inc.</div>
+        <div class="tw_1">Terms of Sale</div>
+        <div class="tw_1">Privacy Statement </div>
+        <div class="tw_1">Legal & Regulatory </div>
+        <div class="tw_1">Accessibility </div>
+
+
+    </div>
+</section>
     
     
 
-    <section id="eleven" style="height:33vh;background-color: rgb(232, 157, 157);"></section>
+    <section id="thirteen" style="height:33vh;background-color: rgb(232, 157, 157);"></section>
     
     <script>
         function language_change(region) {

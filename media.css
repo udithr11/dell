@@ -36,6 +36,8 @@
 
 }
 @media (max-width: 1100px) {
+    #ten_unique_4{display:block !important}
+    #ten_unique_4_extra{width:100%;display:flex;    justify-content: center;   padding-top:1rem    }
     #first_down_arrow{
         padding-right:10rem;
     }
@@ -100,10 +102,13 @@
 
 @media (max-width: 850px) {
     #background_video_1{display:none}
+    #background_video_2{display:none}
     .five_14{display:none !important}
 }
 
 @media screen and (max-width: 767px) {
+    .ten_number{height:2.5rem !important;width:2.5rem !important}
+    #pagination_ten{position:relative !important;left:0 !important}
     #nine_2{padding-bottom:0rem !important}
     #nine_5{padding:0;padding:2rem !important}
     #nine_12{height:auto !important}
@@ -116,6 +121,10 @@
 
 
 @media (max-width: 767px) {
+    #twelve{padding: 1rem 1.5rem !important;}
+    .tw_2{display:block !important}
+    #eleven{padding:2rem 0rem !important}
+    .ten_number{padding:1rem 1rem !important}
     .eight_5_right{padding-left:0 !important}
     .eight_6{width:23% !important}
     .res_off_767{display:none !important}
@@ -171,6 +180,9 @@
 
 
 @media (max-width: 576px) {
+    .ten_number{margin:0rem 0.25rem !important}
+    .ten_rating_new{display:flex !important;justify-content: space-between;}
+    .ten_text_align{display:none}
     .first_filter_main{
         padding-left:1rem !important;
     }

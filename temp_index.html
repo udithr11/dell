@@ -97,9 +97,9 @@ left:100%;width:100%}
 .drop_one_bottom{text-decoration: none;display:block;cursor:pointer;border:1px solid#0672cb;width:100%;font-size: .875em;text-align:center;color:#0672cb;font-weight:300;padding:0.5rem 0;margin-top: 1rem;}
 .drop_two_not_america{cursor:pointer;padding:0 0.5rem;}
 #america_heading{cursor:pointer;border-bottom: 4px solid #0672cb;padding:0 0.5rem}
-#drop_two_ul{padding:1rem;border:none;border-radius:1px;min-height: 20rem;}
-#drop_two_width{width:41rem;height:1px;}
-#drop_two_headings{display:flex;font-weight:500;font-size:16px;padding-top:0.5rem;padding-left:0.5rem;padding-bottom:0.25rem;justify-content: space-evenly;}
+.drop_two_ul{padding:1rem;border:none;border-radius:1px;min-height: 20rem;}
+.drop_two_width{width:41rem;height:1px;}
+.drop_two_headings{display:flex;font-weight:500;font-size:16px;padding-top:0.5rem;padding-left:0.5rem;padding-bottom:0.25rem;justify-content: space-evenly;}
 #drop_two_hr{width: 100%; border: none; border-top: 3px solid #6e6e6e;padding:0;margin:0;margin-top:-0.4rem}
 .pt_1{padding-top:1rem}
 #dropdown_four_last_ul{padding:1rem;border:none;border-radius:1px;min-height:8rem}
@@ -131,7 +131,7 @@ left:100%;width:100%}
                          <div class="dropdown_heading">Sign In</div>
                          <span  class="material-symbols-outlined expand_more_1">
                             expand_more
-                            </span>
+                        </span>
                 </a>
               
                 <ul id="drop_one_container" class="dropdown-menu" onmouseover="addFilter60()" onmouseout="removeFilter60()">
@@ -175,16 +175,16 @@ left:100%;width:100%}
                 <a  class="btn  dropdown-toggle dropdown_one" href="#" role="button"  aria-expanded="false">
                     <span  class="material-symbols-outlined">
                         language
-                        </span>
+                    </span>
                          <div class="dropdown_heading" >IN/EN</div>
                          <span  class="material-symbols-outlined expand_more_1">
                             expand_more
                             </span>
                 </a>
               
-                <ul id="drop_two_ul" class="dropdown-menu" >
-                    <div id="drop_two_width"></div>
-                    <div id="drop_two_headings">
+                <ul  class="dropdown-menu drop_two_ul" >
+                    <div class="drop_two_width"></div>
+                    <div class="drop_two_headings">
                         <div id="america_heading" onclick="language_change('america')">Americas</div>
                         <div class="drop_two_not_america" id="asia_heading" onclick="language_change('asia')" >Asia Pacific & Japan</div>
                         <div class="drop_two_not_america" id="europe_heading" onclick="language_change('europe')" >Europe</div>

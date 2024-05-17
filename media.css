@@ -5,7 +5,7 @@
     .six_8_special{width:50% !important;top:20% !important}
 
     .first_filter_main{
-        padding:7rem 3.23rem 2.5rem 2rem ;
+        padding:7rem 3.23rem 2.5rem 1rem !important;
     }
     #first_down_arrow{
         padding-right:16rem;
@@ -47,17 +47,21 @@
 }
 
 @media (max-width: 1024px) {
+
+    .first_1{width:100% !important;padding:1rem !important;margin-top:-8rem !important}
+    .first_4{margin:0 !important;padding-top:1.5rem !important}
+    .first_2{justify-content:flex-start !important}
     #nine_1{width:100% !important;padding:1rem}
     #eight_main_container{width:100% !important;padding:1rem}
     
     #six_main_container{width:100% !important;padding:1rem}
     .first_filter_main{
-        padding-top:1rem !important;min-height: 25rem;
+        padding-top:1rem !important;
     }
     .first_filter_h1{font-weight:300}
     .first_filter_h2{font-weight:200}
     .first_filter_h3{font-weight:350}
-    .filter_responsive{display:block
+    .filter_responsive{display:block !important
     }
     .first_main_{
         display:none;

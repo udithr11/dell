@@ -36,7 +36,185 @@
 
 
     <section id="first">
-<style>            .res_on{display:none }
+<style>   
+.res_on{display:none }
+.first_main_ {
+  position: relative;
+}
+.first_main_img {
+  object-fit: cover;
+  position: relative;
+  object-position: 90% 0%;
+  width: auto;
+  min-height: 32rem;
+}
+.first_filter {
+  height: 100%;
+  width: 41.66666667%;
+  backdrop-filter: blur(100px);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.first_filter_main {
+  padding: 7rem 3.23rem 2.5rem 8.75rem;
+}
+.first_filter_h1 {
+  font-weight: 200;
+  line-height: 28px;
+  padding-bottom: 1rem;
+  font-size: calc(0.65rem + 0.65vw);
+}
+.first_filter_h2 {
+  font-size: calc(1.32rem + 1.32vw);
+  font-weight: 100;
+  line-height: 48px;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+.first_filter_h3 {
+  font-size: 20px;
+  font-weight: 250;
+  line-height: 28px;
+  letter-spacing: 0.04rem;
+  font-size: calc(0.65rem + 0.65vw);
+}
+.first_button_container {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.first_button_1 {
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  background-color: #ffffff;
+}
+.first_button_2 {
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  border: solid 1px #ffffff;
+  margin-left: 1.5rem;
+}
+.first_button_1_a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  line-height: 1.5rem;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: calc(0.5rem + 0.5vw);
+}
+.first_button_2_a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.5rem;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: calc(0.5rem + 0.5vw);
+}
+#functionalities_main_container{
+    width:80%;margin:auto;height:7rem;
+}
+#swiper_functionalities {
+  display: flex;
+  
+  
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  margin-top: -5rem;
+  position: relative;
+  z-index: 3;
+}
+#swiper_functionalities_inner {
+  display: flex;
+  width: fit-content;
+  height: 2.5rem;
+}
+#first_down_arrow {
+  color: rgb(251, 251, 251);
+  font-size: 4rem;
+  height: 2.5rem;
+  align-items: center;
+  display: flex;
+  padding-right: 20rem;
+  font-weight: 100;
+}
+.first_down_arrow_res {
+  color: rgb(251, 251, 251);
+  font-size: 4rem;
+  height: 2.5rem;
+  align-items: center;
+  display: flex;
+  font-weight: 100;
+  justify-content: center;
+}
+#play_button {
+  background-color: rgb(0, 0, 0);
+  width: fit-content;
+  padding: 0.45rem 0.75rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+#pause_button {
+  background-color: rgb(0, 0, 0);
+  width: fit-content;
+  padding: 0.45rem 0.75rem;
+  display: flex;
+  display: none;
+  cursor: pointer;
+  align-items: center;
+}
+.play_pause {
+  padding-right: 0.75rem;
+  font-weight: 200;
+  color: white;
+}
+.play_pause_inner {
+  color: white;
+}
+.first_arrow_container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: fit-content;
+  padding: 0.45rem 0.75rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+.first_arrow_one {
+  color: #0672cb;
+  padding-right: 0.5rem;
+}
+.first_arrow_two {
+  color: #0672cb;
+  padding-right: 0.5rem;
+  font-weight: 200;
+  font-size: 14px;
+}
+.first_arrow_three {
+  color: #0672cb;
+}
+
+.filter_responsive {
+  background-color: black;
+  color: white;
+  display: none;
+}
+#functionalities_arrow_res{
+    padding-top:2rem;display:flex;justify-content:center;margin-top:-4rem;text-decoration:none;color:white;
+}
+#functionalities_res{
+    width:100%;height:9rem;margin-top: -9rem;position:relative;z-index:5;
+}
+#functionalities_res_new{
+    display:flex;justify-content: flex-end;
+}
+.first_1{width:80%;margin:auto;min-height:8rem;background-colorr:deeppink;position:relative;z-index:12;margin-top:-6rem}
+.first_2{width:100%;display:flex;justify-content:flex-end}
+.first_3{display:flex;width:fit-content;padding:0.5rem 0.75rem;background-color:white;margin-right:0.5rem}
+.first_4{width:100%;justify-content:center;margin-top:-2.5rem}
 </style>
        
         
@@ -202,7 +380,48 @@
               </div>
               
             </div>
-            <div id="swiper_functionalities" >
+
+            <!-- 296379874263894762837648237648723649782639847 -->
+
+
+
+
+            <div class="first_1" >
+                <div class="first_2" >
+                    <div class="first_3" >
+                    <span  class="material-symbols-outlined swiper-button-prevvv first_arrow_one">
+                        arrow_left_alt
+                    </span>
+                    <div  class=" swiper-paginationqq first_arrow_two"> </div>
+                    <span  class="material-symbols-outlined swiper-button-nexttt first_arrow_three">
+                        arrow_right_alt
+                    </span>
+
+                </div>
+
+                <div class="res_off" id="play_button" onclick="play_pause()" >
+                    <div class="play_pause" >Pause</div>
+                    <span class="material-symbols-outlined play_pause_inner" >
+                        pause
+                    </span>
+                </div>
+    
+                <div class="res_off" id="pause_button" onclick="play_pause()" >
+                    <div class="play_pause">Play</div>
+                    <span  class="material-symbols-outlined play_pause_inner">
+                        play_circle
+                    </span>
+                </div>
+
+                </div>
+                <div class="first_4" >
+                    <span  class="material-symbols-outlined first_down_arrow_res">
+                        keyboard_arrow_down
+                    </span></div>
+
+            </div>
+
+            <!-- <div id="swiper_functionalities" >
                 <div id="swiper_functionalities_inner">
                     <div class="res_off">
                         <span id="first_down_arrow" class="material-symbols-outlined">
@@ -214,7 +433,7 @@
                         <span  class="material-symbols-outlined swiper-button-prevvv first_arrow_one">
                             arrow_left_alt
                         </span>
-                        <div  class="res_off swiper-paginationqq first_arrow_two">
+                        <div  class=" swiper-paginationqq first_arrow_two">
                         </div>
                         <span  class="material-symbols-outlined swiper-button-nexttt first_arrow_three">
                             arrow_right_alt
@@ -242,13 +461,15 @@
                     </div>
                     
                 </div>
-            </div>
             </div> -->
+            </div> 
 
-            <div id="functionalities_main_container">
+            <!-- functionalties for responsive -->
+
+            <!-- <div id="functionalities_main_container">
         <div id="functionalities_res" >
             <div id="functionalities_res_new" >
-                    <div class="first_arrow_container"  style="display:flex">
+                    <div class="first_arrow_container" >
                         <span  class="material-symbols-outlined swiper-button-prevvv first_arrow_one">
                             arrow_left_alt
                         </span>
@@ -284,7 +505,7 @@
                 
             
         </div>
-    </div>
+            </div> -->
             
             
           </div>
@@ -301,8 +522,8 @@
                 effect: "fade",
                
               pagination: {
-                el: ".swiper-paginationqq,.swiper-paginationqqq",
-
+                // el: ".swiper-paginationqq,.swiper-paginationqqq",
+                el: ".swiper-paginationqq",
                 type: "fraction",
               },
               navigation: {
@@ -310,7 +531,7 @@
                 prevEl: ".swiper-button-prevvv",
               },
               autoplay: {
-              delay: 2500, // Adjust the delay (in ms) between slides as needed
+              delay: 112500, // Adjust the delay (in ms) between slides as needed
               disableOnInteraction: false, // Set to false to prevent autoplay from stopping when user interacts with the slider
             },
             loop: true,
@@ -2298,7 +2519,7 @@ window.addEventListener('resize', function() {
         .ten_special_left{margin-left:1rem}
         .ten_special_right{margin-right:1rem}
         .ten_number:hover{
-            border:2px solid black; height:3.5rem;width:3.5rem;background-color:#d2d2d2
+            border:2px solid black; padding:0.9rem 1.4rem;background-color:#d2d2d2
         }
         .ten_text_align{text-align: center;}
         .ten_rating_new{display:none;padding-top:1rem;

@@ -117,8 +117,7 @@
     .ten_number{height:2.5rem !important;width:2.5rem !important}
     #pagination_ten{position:relative !important;left:0 !important}
     #nine_2{padding-bottom:0rem !important}
-    #nine_5{padding:0;padding:2rem !important}
-    #nine_12{height:auto !important}
+    
     #nine_11{order:1 !important;padding:0rem !important}
     #nine_4{order:2 !important}
     .mySwiper_res .swiper-slide-next {
@@ -128,6 +127,8 @@
 
 
 @media (max-width: 767px) {
+    #nine_5{padding:0;padding:0rem !important}
+    #nine_12{height:auto !important;padding-left:0rem !important;padding-bottom:1rem !important}
     #search_container{width:100% !important;}
     #twelve{padding: 1rem 1.5rem !important;}
     .tw_2{display:block !important}

@@ -2765,7 +2765,7 @@ body{background-color:#0a0e14}
     </div>
     </div>
     <script>
-        var swiper_1 = new Swiper(".mySwiper_1", {
+        var swiper_1 = new Swiper(".mySwiper_1",{
         effect: "slide",
         grabCursor: true,
         centeredSlides: true,
@@ -3115,9 +3115,6 @@ body{background-color:#0a0e14}
              </div>
         </div>
         
-
-             
-
       </div>
         
       <!-- Initialize Swiper -->
@@ -3133,24 +3130,16 @@ function initSwiper() {
             nextEl: ".swiper-button-next_res",
             prevEl: ".swiper-button-prev_res",
         },
-        autoplay: {
-        delay: 2500, 
-        disableOnInteraction: true, // Set to false to continue autoplay even after user interaction
-        waitForTransition: true, // Wait for transitions to finish before changing slides
-        },
+        // autoplay: {
+        // delay: 2500, 
+        // disableOnInteraction: true, 
+        // waitForTransition: true, 
+        // },
         pagination: {
         el: ".swiper-pagination_9",
         clickable: false,
       },
     });
-
-    // Add click event listener to the next button
-    // document.querySelector('.swiper-button-next_res').addEventListener('click', function() {
-        // Check if it's the last slide, then go to the first slide
-        // if (swiper_res.isEnd) { 
-            // swiper_res.slideTo(0);  
-        // }
-    // });
 }
 
 // Initialize Swiper when the page loads
@@ -3168,15 +3157,11 @@ window.addEventListener('resize', function() {
 function play_pause_change1_res(id) {
         console.log("play_pause_change1_res entered");
 
-        // if (document.getElementById("pause_button1").style.display === "flex") {
-        //     document.getElementById("pause_button1").style.display = "none";
-        //     document.getElementById("play_button1").style.display = "flex";
-        //     mySwiper_res.autoplay.stop();
-        // }
-
-        if (id === 'right__unique') {
+        
+        if (window.innerWidth > 767){
+            if (id === 'right__unique') {
             var currentSlide1 = swiper_res.activeIndex;
-            var totalSlides1 = swiper_res.slides.length;
+            var totalSlides1 = 5;
 
             if (currentSlide1 === totalSlides1 - 1) { // Last slide
                 console.log('if-inte ullil ethunnund')
@@ -3196,6 +3181,37 @@ function play_pause_change1_res(id) {
             // swiper_1.slidePrev();
             lastSlideCounter1 = 0; // Reset the counter when navigating left
         }
+
+        }
+        else{
+            if (id === 'right__unique') {
+            var currentSlide1_ = swiper_res.activeIndex;
+            var totalSlides1_ = 6;
+
+            if (currentSlide1_ === totalSlides1_ - 1) { // Last slide
+                console.log('if-inte ullil ethunnund')
+                lastSlideCounter1_++;
+                if (lastSlideCounter1_ >= 1) {
+                    console.log('Transitioning to the first slide nadakkuo???');
+                    swiper_res.slideTo(0);
+
+                    lastSlideCounter1_ = 0; // Reset the counter
+                } else {
+                    console.log('Last slide reached, increment counter');
+
+
+                }
+            } else {
+                // swiper_1.slideNext();
+                lastSlideCounter1_ = 0; // Reset the counter if not on the last slide
+            }
+        } else if (id === 'left__unique') {
+            // swiper_1.slidePrev();
+            lastSlideCounter1_ = 0; // Reset the counter when navigating left
+        }
+        }
+
+        
     }
 
 
@@ -4502,7 +4518,7 @@ function updateCharCount() {
     
     
 
-    <section id="thirteen" style="height:33vh;background-color: rgb(232, 157, 157);"></section>
+    <!-- <section id="thirteen" style="height:33vh;background-color: rgb(232, 157, 157);"></section> -->
     
     <script>
         function language_change(region) {
